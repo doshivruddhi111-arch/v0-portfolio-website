@@ -70,13 +70,13 @@ export default function Hero({ setMobileMenuOpen }: HeroProps) {
           {/* Right: Visual Element */}
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative w-full max-w-xs md:max-w-sm">
-              {/* Rounded image container with soft shadow */}
-              <div className="aspect-square rounded-[3rem] bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 overflow-hidden shadow-2xl">
+              {/* Circular image container with soft shadow */}
+              <div className="aspect-square rounded-full bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 overflow-hidden shadow-2xl">
                 <Image
                   src="/profile.png"
                   alt="Vruddhi Snehalkumar Doshi"
                   fill
-                  className="object-cover"
+                  className="object-contain p-2"
                   priority
                 />
               </div>
