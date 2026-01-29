@@ -73,7 +73,7 @@ export default function Hero({ setMobileMenuOpen }: HeroProps) {
               {/* Rounded image container with soft shadow */}
               <div className="aspect-square rounded-[3rem] bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 overflow-hidden shadow-2xl">
                 <Image
-                  src="/placeholder-user.jpg"
+                  src="/profile.png"
                   alt="Vruddhi Snehalkumar Doshi"
                   fill
                   className="object-cover"
