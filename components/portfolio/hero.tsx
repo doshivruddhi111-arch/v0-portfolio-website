@@ -1,6 +1,7 @@
 'use client';
 
 import { ArrowDown, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 
 interface HeroProps {
   setMobileMenuOpen: (open: boolean) => void;
@@ -71,13 +72,13 @@ export default function Hero({ setMobileMenuOpen }: HeroProps) {
             <div className="relative w-full max-w-xs md:max-w-sm">
               {/* Rounded image container with soft shadow */}
               <div className="aspect-square rounded-[3rem] bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/20 overflow-hidden shadow-2xl">
-                {/* Placeholder for image - elegant gradient background */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 flex items-center justify-center">
-                  <div className="text-center space-y-4 px-8">
-                    <div className="text-6xl font-serif text-primary/40">VS</div>
-                    <p className="text-sm text-muted-foreground/60">Professional Portfolio</p>
-                  </div>
-                </div>
+                <Image
+                  src="/placeholder-user.jpg"
+                  alt="Vruddhi Snehalkumar Doshi"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
               
               {/* Decorative accent */}
